@@ -290,13 +290,14 @@ li a:hover{
 
 
 /* About */
+
 .about {
 	width: 100%;
 	height: 100vh;
-	padding: 50px 0;
+	padding: 35px 0;
 }
 
-.about h1 {
+.about h1{
 	font-size: 60px;
 	margin-top: 20px;
 	display: flex;
@@ -308,44 +309,42 @@ li a:hover{
 	text-transform: uppercase;
 }
 
-.about span {
-	background: linear-gradient(to right, #c72092, #6c14d0);
+.about h1 span{
+	background: linear-gradient(to right, #c72092 , #6c14d0);
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
 	margin-left: 15px;
 }
 
-.about_main {
+
+.about .about_main{
 	position: relative;
 	top: 40%;
 	left: 50%;
-	transform: translate(-50%, -50%);
+	transform: translate(-50%,-50%);
 	display: flex;
 	justify-content: space-around;
 	align-items: center;
-
-	margin-left: 5px;
-	padding: 20px;
-	border-radius: 10px;
 }
 
-.about_image {
+.about .about_main .about_image{
 	display: flex;
 	margin-top: 50px;
 }
 
-.about_small_image {
+.about .about_main .about_image .about_small_image{
 	display: flex;
 	flex-direction: column;
 	position: relative;
 	top: 15px;
 }
 
-.about_small_image img {
+
+.about .about_main .about_image .about_small_image img{
 	height: 92px;
 	margin: 5px 0;
 	cursor: pointer;
-	background: linear-gradient(to right, #6c14d0, #c72092);
+	background: linear-gradient(to right, #6c14d0 , #c72092);
 	display: block;
 	border-radius: 6px;
 	padding: 5px 5px;
@@ -363,12 +362,11 @@ li a:hover{
 	display: flex;
 }
 
-.image_container {
+.about .about_main .image_contaner img{
 	border: 3px solid #6c14d0;
 	border-radius: 20px;
 	height: 430px;
 	padding: 30px;
-	margin: 10px;
 	box-shadow: 0 0 8px #6c14d0;
 }
 
@@ -377,13 +375,13 @@ li a:hover{
 }
 
 .about_text p {
-	background: linear-gradient(to left, #c72092, #6c14d0);
+	background: linear-gradient(to left, #c72092 , #6c14d0);
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
 	line-height: 22px;
 	width: 600px;
 	text-align: justify;
-	padding: 15px 30px;
+	padding: 25px 30px;
 	border: 2px solid #c72092;
 	border-radius: 20px;
 	box-shadow: 0 0 8px #c72092;
@@ -407,8 +405,8 @@ li a:hover{
 	border: 2px solid transparent;
 	background: #c72092;
 	color: white;
-}
-/* About */
+} */
+/* About
 
 
 /* Review */
@@ -558,3 +556,138 @@ li a:hover{
 	margin-bottom: 60px;
 }
 /* Services */
+
+
+/* Login Form */
+.login_form {
+	width: 100%;
+	height: 100vh;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	background-image: url(../img/loging_bg.png);
+	background-size: cover;
+	background-position: center;
+}
+
+.left img {
+	width: 650px;
+}
+
+.right {
+	position: relative;
+	top: -50px;
+	left: -60px;
+	padding: 50px 80px;
+}
+
+.right h1 {
+	font-family: pre;
+	font-size: 45px;
+	margin-bottom: 40px;
+}
+
+.right p {
+	margin-bottom: 5px;
+}
+
+.right button {
+	width: 350px;
+	color: white;
+	padding: 7px 20px;
+	border: none;
+	border-radius: 5px;
+	font-size: 20px;
+	cursor: pointer;
+	background:  linear-gradient(to right, #c72092, #6c14d0);
+}
+
+.user {
+	border: 2px solid #6c14d0;
+	border-radius: 5px;
+	width: 350px;
+	height: 40px;
+	display: flex;
+}
+
+.user i{
+	position: relative;
+	top: 9px;
+	left: 15px;
+	color: #c72092;
+}
+
+.username {
+	position: relative;
+	left: 9%;
+	width: 295px;
+	background: none;
+	outline: none;
+	border: none;
+	display: flex;
+	font-size: 15px;
+}
+
+.password_tag {
+	margin: 15px 0 5px 0;
+}
+
+.password {
+	border: 2px solid #6c14d0;
+	border-radius: 5px;
+	width: 350px;
+	height: 40px;
+	display: flex;
+}
+
+.password i {
+	position: relative;
+	top: 9px;
+	left: 15px;
+	color: #c72092;
+}
+
+.password input {
+	position: relative;
+	left: 9%;
+	width: 295px;
+	background: none;
+	border: none;
+	outline: none;
+	display: flex;
+	font-size: 15px;
+}
+
+::-webkit-input-placeholder {
+	color: black;
+	opacity: 0.7;
+}
+
+.forget {
+	position: relative;
+	left: 60%;
+	margin: 6px 0 10px 0;
+	cursor: pointer;
+}
+
+.login_icon {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-top: 25px;
+}
+
+.login_icon a {
+	width: 30px;
+	height: 30px;
+	margin: 0 2px;
+	border-radius: 50%;
+	background: #f3f3f3;
+	box-shadow: 0 0 5px rgba(0,0,0,0.6);
+}
+
+.login_icon img {
+	width: 20px;
+	margin: 5px 5px;
+}
+/* Login Form */
