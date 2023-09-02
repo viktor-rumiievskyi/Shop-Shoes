@@ -307,7 +307,7 @@ li a:hover{
 .about {
 	width: 100%;
 	height: 100vh;
-	padding: 35px 0;
+	padding-top: 100px;
 }
 
 .about h1{
@@ -330,7 +330,7 @@ li a:hover{
 }
 
 
-.about .about_main{
+ .about_main{
 	position: relative;
 	top: 40%;
 	left: 50%;
@@ -340,12 +340,12 @@ li a:hover{
 	align-items: center;
 }
 
-.about .about_main .about_image{
+ .about_image{
 	display: flex;
 	margin-top: 50px;
 }
 
-.about .about_main .about_image .about_small_image{
+.about_small_image{
 	display: flex;
 	flex-direction: column;
 	position: relative;
@@ -353,7 +353,7 @@ li a:hover{
 }
 
 
-.about .about_main .about_image .about_small_image img{
+.about_small_image img{
 	height: 92px;
 	margin: 5px 0;
 	cursor: pointer;
@@ -375,7 +375,7 @@ li a:hover{
 	display: flex;
 }
 
-.about .about_main .image_contaner img{
+.image_contaner img{
 	border: 3px solid #6c14d0;
 	border-radius: 20px;
 	height: 430px;
@@ -418,7 +418,9 @@ li a:hover{
 	border: 2px solid transparent;
 	background: #c72092;
 	color: white;
-} */
+} 
+
+
 /* About
 
 
@@ -426,8 +428,12 @@ li a:hover{
 .review {
 	width: 100%;
 	height: 100vh;
-	padding-top: 80px;
+	padding-top: 100px;
 }
+
+
+
+
 
 .review h1 {
 	font-size: 60px;
